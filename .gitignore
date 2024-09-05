@@ -1,53 +1,9 @@
-# Ignore WordPress core files
-/wp-admin/
-/wp-includes/
-
-# Ignore WordPress config file (sensitive data like database credentials)
-wp-config.php
-
-# Ignore themes and plugins (if not custom-developed, as they can be re-installed)
-wp-content/plugins/
-wp-content/themes/
-
-# Ignore uploads folder (media files, can be very large and should be handled outside Git)
-wp-content/uploads/
-
-# Ignore upgrade folder (temporary files used during WordPress upgrades)
-wp-content/upgrade/
-
-# Ignore personal logs, backups, and databases
+/wp-config.php
+/wp-content/uploads
+/wp-content/upgrade
+/wp-content/plugins
+/wp-content/themes
 *.log
 *.sql
-*.tar.gz
-*.zip
-
-# Ignore operating system files
 .DS_Store
-Thumbs.db
-
-# Ignore IDE/editor-specific files
-/.idea/
-/.vscode/
-/*.sublime-project
-/*.sublime-workspace
-
-# Ignore Node.js dependencies and build files (if used)
-/node_modules/
-/npm-debug.log
-/yarn-error.log
-
-# Ignore composer vendor directory (if you are using Composer)
-/vendor/
-
-# Ignore backup and temp files
-*.bak
-*.tmp
-*.swp
-*.swo
-
-# Ignore environment-specific configurations (if any)
-/.env
-.phpunit.result.cache
-
-# Ignore WordPress package manager (if using Bedrock or similar)
-/web/wp/wp-content/
+node_modules
